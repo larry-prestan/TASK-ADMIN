@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/indexpage.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/indexpage.js"></script>
+    <title>TASK-ADMIN</title>
+</head>
+
+<body>
+    <div class="container" id="rootcontainer">
+        <nav class="navbar navbar-dark bg-dark">
+            <a href="" class="navbar-brand">Task-Admin</a>
+            <form class="form-inline" id="formbusqueda">
+                <input type="search" class="form-control mr-2" name="nombre-tarea" id="nombre-tarea" autocomplete="off" placeholder="TAREA">
+                <button class="btn btn-primary" id="boton-buscartarea">BUSCAR</button>
+            </form>
+        </nav>
+        <hr>
+        <div class="row">
+            <!--formulario-->
+            <div class="col">
+                <div class="card bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">Agregar Tarea</h5>
+                        <form id="form-tarea">
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <input type="text" class="form-control" name="tarea" id="tarea" autocomplete="off" required placeholder="NOMBRE-TAREA">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <textarea class="form-control" name="descripcion-tarea" id="descripcion-tarea" cols="30" rows="10" autocomplete="off" placeholder="DESCRIPCION-TAREA"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <button class="btn btn-primary btn-block" id="boton-agregartarea">AGREGAR</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--resultado busqueda y tabla-->
+            <div class="col">
+                <div class="container mb-3" id="lista-busqueda">
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <ul class="list-group">
+
+                            </ul>
+                            <hr style="border-color: white;">
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <button class="btn btn-success" id="boton-salirlistadobusqueda">SALIR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container overflow-auto" id="tabla-container">
+                    <table class="table table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Id</th>
+                                <th>Nombre</th>
+                                <th>Descripcion</th>
+                            </tr>
+                        </thead>
+                        <tbody id="datos-tabla">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+</html>

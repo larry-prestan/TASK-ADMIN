@@ -1,0 +1,9 @@
+#rootcontainer {
+    padding: 1%;
+    margin-top: 2%;
+}
+
+#lista-busqueda,
+#tabla-container {
+    margin-top: 2%;
+}
